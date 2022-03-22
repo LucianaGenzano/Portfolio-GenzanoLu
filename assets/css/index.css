@@ -106,7 +106,7 @@ h1 {
     height: 10vh;
     width: 100%;
     bottom: 0px;
-    position: absolute;
+    position: fixed;
     padding-top:20px;
     padding-bottom:50px;
     align-items: center;
@@ -447,22 +447,32 @@ input[type=text], select {
 
 /*pagina servicios*/
 
-.seccionServicios{max-width: 1080px;
-    margin: 0%auto;}
-  
+.grid__container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color:var(--thirdcolor);
+    padding: 10px;
+  }
+  .grid__item {
+    background-color:var(--secondary);
+    border: 1px solid var(--thirdcolor);
+    padding: 20px;
+    font-size: var(--font-secondary)
+    text-align: center;
+  }
   ol { list-style-type: none;
     
-    background: #c7a7f1;
+    background: var(--secondary);
     padding: 10px;
-    margin-top: 550px;
+    grid-row: 2;
+    grid-column: 1;
+   
   }
   ol li {
-    background: #a3f0f6;
+    background: var(--thirdcolor);
     color: #000000;
     padding: 25px;
     margin-left: 150px;
   }  
-  .workFlow{ box-sizing: border-box;
-width: 500px;
-}
+
   .pWorkflow{padding: 35px;}
