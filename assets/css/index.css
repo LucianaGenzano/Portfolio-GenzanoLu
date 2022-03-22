@@ -46,6 +46,7 @@ header .nabvar {
     min-height: 10vh;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--font-primary);
 }
 
 .logo {
@@ -259,7 +260,8 @@ h1 {
 }
 
 /*paginaIndex*/
-
+.seccionIndex{max-width: 1080px;
+    margin: 0%auto;}
 div.gallery {
     border: 1px solid #a3f0f6;
     box-sizing: border-box;
@@ -445,7 +447,8 @@ input[type=text], select {
 
 /*pagina servicios*/
 
-
+.seccionServicios{max-width: 1080px;
+    margin: 0%auto;}
   
   ol { list-style-type: none;
     
