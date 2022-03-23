@@ -1,0 +1,16 @@
+
+.footer {
+    height: 10vh;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    padding-top:20px;
+    padding-bottom:50px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--principal);
+    color: #c7a7f1;
+    font-family: var(--font-secondary);
+    font-size: var(--text-small);
+    margin-top: 20px;
+}

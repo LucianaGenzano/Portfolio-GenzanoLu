@@ -1,0 +1,64 @@
+/*headerNavbar*/
+header{
+    background-color: var(--secondary);
+}
+
+header .nabvar {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-primary);
+}
+
+.logo {
+    flex-basis: 30%;
+    font-size: 1.8em;
+    padding: 1rem;
+}
+
+header.menu {
+    flex-basis: 30%;
+    justify-content: space-between;
+}
+
+.menu .menu__item .menu__link {
+    font-size: 1.8em;
+    padding: 1rem;
+}
+
+.nabvar .menu .menu__item:hover {
+    display: block;
+}
+
+.nabvar .menu .menu__item:hover {
+    background-color: #d0fced;
+    transition: all .3s ease-in-out;
+}
+
+.nabvar .menu .menu__link:hover {
+    background-color: #d0fced;
+    color: var(--secondary);
+    transition: all .3s ease-in-out;
+}
+
+.nabvar .logo:hover {
+    background-color: #d0fced;
+    color: var(--principal)
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--principal);
+    display: inline-block;
+}
+
+h1 {
+    max-width: 1080px;
+    font-family: var(--font-secondary);
+    text-align: center;
+    margin-top: 4rem;
+}

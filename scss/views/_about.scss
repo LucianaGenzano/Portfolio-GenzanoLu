@@ -1,0 +1,32 @@
+/*pagina About */
+.presentacion {
+    gap: 2rem;
+    align-items: center;
+}
+
+.presentacion__picture {
+    flex-grow: 1;
+    flex-basis: 80%;
+}
+
+.presentacion__img {
+    width: 100%;
+    min-width: 367px;
+    border-radius: 50%;
+}
+
+.presentacion__descripcion {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.presentacion__container {
+    font-size: var(--text-small);
+    font-family: var(--font-secondary);
+}
+
+.saludo {
+    font-family: var(--font-primary);
+    padding: 1rem;
+}
+
