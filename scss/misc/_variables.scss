@@ -8,3 +8,15 @@
     $text-large: 28px;
     $text-medium: 24px;
     $text-small: 18px;
+
+    $sp: (
+        large: 3rem,
+        medium:2rem,
+        small:1rem,
+    );
+    @each $var in $sp list {
+        .sp-#{$var} {
+            padding: #{$val};
+        }
+        
+    }

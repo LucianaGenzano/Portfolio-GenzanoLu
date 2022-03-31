@@ -247,7 +247,7 @@ h1 {
 /*helpers*/
 .container {
     max-width: 1080px;
-    margin: 0%auto;
+    margin: 0%;
 }
 
 .flex-row {
@@ -261,7 +261,7 @@ h1 {
 
 /*paginaIndex*/
 .seccionIndex{max-width: 1080px;
-    margin: 0%auto;}
+    margin: 0%;}
 div.gallery {
     border: 1px solid #a3f0f6;
     box-sizing: border-box;
@@ -334,7 +334,7 @@ div.gallery {
 
 .hireMe {
     max-width: 1080px;
-    margin: 0%auto;
+    margin: 0%;
     display: block;
 box-sizing: border-box;
 }
@@ -400,6 +400,8 @@ input[type=text], select {
     border-radius: 5px;
     background-color: #a3f0f6;
     padding: 20px;
+    max-width: 1080px;
+    margin: 0%;
   }
 
 /*pagina Cv*/
@@ -457,7 +459,7 @@ input[type=text], select {
     background-color:var(--secondary);
     border: 1px solid var(--thirdcolor);
     padding: 20px;
-    font-size: var(--font-secondary)
+    font-size: var(--font-secondary);
     text-align: center;
   }
   ol { list-style-type: none;
