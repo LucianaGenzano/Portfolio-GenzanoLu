@@ -1,8 +1,8 @@
 /*variables*/
 
     $principal: #000000;
-    $secondary: #c7a7f1;
-    $thirdcolor: #d0fced;
+    $secondary: #5B4CF5;
+    $thirdcolor: #5FF5A5;
     $font-primary: "IBM Plex Mono", sans-serif;
     $font-secondary: "Roboto";
     $text-large: 28px;
@@ -16,6 +16,17 @@
     );
     @each $var in $sp list {
         .sp-#{$var} {
+            padding: #{$val};
+        }
+        
+    }
+    $color: (
+        negro: #000000,
+       violeta:#5B4CF5,
+        verde:#5FF5A5,
+    );
+    @each $var in $color list {
+        .color-#{$var} {
             padding: #{$val};
         }
         
