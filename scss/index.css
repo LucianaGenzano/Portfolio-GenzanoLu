@@ -1,0 +1,247 @@
+
+
+
+/*imports */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,500;0,600;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*variables*/
+:root {
+    --principal: #000000;
+    --secondary: #c7a7f1;
+    --thirdcolor: #d0fced;
+    --font-primary: "IBM Plex Mono", sans-serif;
+    --font-secondary: "Roboto";
+    --text-large: 28px;
+    --text-medium: 24px;
+    --text-small: 18px;
+}
+
+/*normalized*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Globals*/
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    color: var(--principal);
+}
+
+body {
+  
+    min-height: 100vh;
+    width: auto;
+}
+
+/*headerNavbar*/
+header{
+    background-color: var(--secondary);
+}
+
+header .nabvar {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-primary);
+}
+
+.logo {
+    flex-basis: 30%;
+    font-size: 1.8em;
+    padding: 1rem;
+}
+
+header.menu {
+    flex-basis: 30%;
+    justify-content: space-between;
+}
+
+.menu .menu__item .menu__link {
+    font-size: 1.8em;
+    padding: 1rem;
+}
+
+.nabvar .menu .menu__item:hover {
+    display: block;
+}
+
+.nabvar .menu .menu__item:hover {
+    background-color: #d0fced;
+    transition: all .3s ease-in-out;
+}
+
+.nabvar .menu .menu__link:hover {
+    background-color: #d0fced;
+    color: var(--secondary);
+    transition: all .3s ease-in-out;
+}
+
+.nabvar .logo:hover {
+    background-color: #d0fced;
+    color: var(--principal)
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--principal);
+    display: inline-block;
+}
+
+h1 {
+    max-width: 1080px;
+    font-family: var(--font-secondary);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer {
+    height: 10vh;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    padding-top:20px;
+    padding-bottom:50px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--principal);
+    color: #c7a7f1;
+    font-family: var(--font-secondary);
+    font-size: var(--text-small);
+    margin-top: 20px;
+}
+
+/* RESPONSIVE*/
+/*Estilo Mobile*/
+
+@media only screen and (max-width: 455px) {
+    .nabvar {
+        font-size: 1em;
+        background-color: var(--secondary);
+        flex-wrap: wrap;
+
+    }
+
+    .nabvar.logo {
+        align-content: center;
+    }
+
+    header.nabvar {
+        flex-wrap: wrap;
+    }
+
+   
+
+    .presentacion {
+        flex-wrap: wrap;
+
+    }
+
+    .presentacion__picture {
+        flex-grow: 1;
+        min-width: 455px;
+
+    }
+
+    .presentacion__descpricion {
+        flex-grow: 1;
+        order: -1;
+
+    }
+}
+
+/*Estilo Tablet*/
+@media only screen and (max-width:695px) {
+
+    header.nabvar {
+        flex-wrap: wrap;
+    }
+
+    body {
+        background-color: var(--secondary);
+    }
+
+    #grilla {
+        display: grid;
+
+    }
+
+    #grilla {
+        grid-template-columns: repeat (2 1fr);
+    }
+
+    body {
+        background-color: var(--secondary);
+        background-image: linear-gradient(to bottom, #260537, #243a75, #0071ab, #00a9d3, #12e2eb);
+    }
+
+    .presentacion {
+        flex-wrap: wrap;
+        font-size: 1.2em;
+
+    }
+
+    .presentacion__picture {
+        flex-grow: 1;
+        min-width: 455px;
+
+    }
+
+    .presentacion__descpricion {
+        flex-grow: 1;
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+.galeria{
+    align-items: center;
+    display: block;
+    position: relative;}
+    .presentacion__img {
+        max-width: 355px;
+        margin: auto 1em;
+    }
+    .seccion{flex-wrap: wrap;}
+    .servicios{
+        flex-grow: 1;
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+
+    }
+
+}
+
+
+/*Estilos Desktop*/
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-color: var(--secondary);
+
+    }
+
+    header.nabvar {
+        flex-wrap: wrap;
+    }
+
+    #grilla {
+        grid-template-columns: repeat (3 1fr);
+    }
+    .container{grid-template-columns: repeat(3,1fr);}
+}
+
