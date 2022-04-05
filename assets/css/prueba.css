@@ -1,6 +1,125 @@
 
 
 
+/*imports */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,500;0,600;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*variables*/
+:root {
+    --principal: #000000;
+    --secondary: #c7a7f1;
+    --thirdcolor: #d0fced;
+    --font-primary: "IBM Plex Mono", sans-serif;
+    --font-secondary: "Roboto";
+    --text-large: 28px;
+    --text-medium: 24px;
+    --text-small: 18px;
+}
+
+/*normalized*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Globals*/
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    color: var(--principal);
+}
+
+body {
+  
+    min-height: 100vh;
+    width: auto;
+}
+
+/*headerNavbar*/
+header{
+    background-color: var(--secondary);
+}
+
+header .nabvar {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-primary);
+}
+
+.logo {
+    flex-basis: 30%;
+    font-size: 1.8em;
+    padding: 1rem;
+}
+
+header.menu {
+    flex-basis: 30%;
+    justify-content: space-between;
+}
+
+.menu .menu__item .menu__link {
+    font-size: 1.8em;
+    padding: 1rem;
+}
+
+.nabvar .menu .menu__item:hover {
+    display: block;
+}
+
+.nabvar .menu .menu__item:hover {
+    background-color: #d0fced;
+    transition: all .3s ease-in-out;
+}
+
+.nabvar .menu .menu__link:hover {
+    background-color: #d0fced;
+    color: var(--secondary);
+    transition: all .3s ease-in-out;
+}
+
+.nabvar .logo:hover {
+    background-color: #d0fced;
+    color: var(--principal)
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--principal);
+    display: inline-block;
+}
+
+h1 {
+    max-width: 1080px;
+    font-family: var(--font-secondary);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer {
+    height: 10vh;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    padding-top:20px;
+    padding-bottom:50px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--principal);
+    color: #c7a7f1;
+    font-family: var(--font-secondary);
+    font-size: var(--text-small);
+    margin-top: 20px;
+}
 
 /* RESPONSIVE*/
 /*Estilo Mobile*/
